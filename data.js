@@ -35,7 +35,7 @@ const CELAM_DEFAULT_DATA = {
       "address": ""
     },
     {
-      "name": "Marta",
+      "name": "Marta C.",
       "birthday": "2000-08-15",
       "saint": "29/07",
       "phone": "661600709",
@@ -51,7 +51,7 @@ const CELAM_DEFAULT_DATA = {
       "address": "Antoni Gaudí 19 3º4ª 08870 SITGES (Barcelona)"
     },
     {
-      "name": "Laura",
+      "name": "Laura R.",
       "birthday": "2000-04-24",
       "saint": "19/10",
       "phone": "651956054",
@@ -211,7 +211,7 @@ const CELAM_DEFAULT_DATA = {
       "address": ""
     },
     {
-      "name": "Laura",
+      "name": "Laura S.",
       "birthday": "2000-09-19",
       "saint": "19/10",
       "phone": "639226447",
@@ -291,7 +291,7 @@ const CELAM_DEFAULT_DATA = {
       "address": "Javier Ferrero, 16, 3º A 28002 MADRID; Ronda Buenavista, 26. Bl.2,4-B. 45005 TOLEDO"
     },
     {
-      "name": "Marta",
+      "name": "Marta G.",
       "birthday": "2000-02-23",
       "saint": "29/07",
       "phone": "656386059",
@@ -307,7 +307,7 @@ const CELAM_DEFAULT_DATA = {
       "address": "Calle Copenhague 5, 3º1ª, ALCORCÓN (Madrid)"
     },
     {
-      "name": "Marta",
+      "name": "Marta M.",
       "birthday": "2000-06-04",
       "saint": "29/07",
       "phone": "636115581",
