@@ -71,13 +71,16 @@ select{display:block;width:100%;margin-top:7px;padding:12px 13px;border:1px soli
 .sky-icon{font-size:52px}.sky-card h2{font-family:"Playfair Display",serif;font-size:32px;margin:7px 0}.sky-card p{margin:0 0 22px;color:var(--muted);font-size:17px}
 /* ===== NUEVA CABECERA CELAM ===== */
 
-.topbar {
-  display: grid;
-  grid-template-columns: 64px 1fr;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 18px;
-  min-height: 110px;
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:18px;
+  min-height:110px;
+  position:relative;
+}
+#todayBtn{
+  display:none;
 }
 
 .brand {
