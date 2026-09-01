@@ -3,7 +3,7 @@ const CELAM_DEFAULT_DATA = {
   "theme": "Nuestro año juntos",
   "people": [
     {
-      "name": "Modesto",
+      "name": "Papamó",
       "birthday": "2000-02-02",
       "saint": "07/03",
       "phone": "",
@@ -11,7 +11,7 @@ const CELAM_DEFAULT_DATA = {
       "address": "Con Dios"
     },
     {
-      "name": "Pilar",
+      "name": "Illa",
       "birthday": "2000-12-28",
       "saint": "03/11",
       "phone": "",
@@ -35,22 +35,14 @@ const CELAM_DEFAULT_DATA = {
       "address": ""
     },
     {
-      "name": "Marta",
+      "name": "Marta C.",
       "birthday": "2000-08-15",
       "saint": "29/07",
       "phone": "661600709",
       "email": "m.comellas@gmail.com",
       "address": "Manuel Gaya y Tomás, 14 2-1ª 25001 LLEIDA"
     },
-    {
-      "name": "Josep",
-      "birthday": "2000-07-05",
-      "saint": "19/03",
-      "phone": "610815716",
-      "email": "j.rosinach@gmail.com",
-      "address": "Manuel Gaya y Tomás, 14 2-1ª 25001 LLEIDA"
-    },
-    {
+      {
       "name": "Magí",
       "birthday": "2000-05-11",
       "saint": "19/08",
@@ -59,7 +51,7 @@ const CELAM_DEFAULT_DATA = {
       "address": "Antoni Gaudí 19 3º4ª 08870 SITGES (Barcelona)"
     },
     {
-      "name": "Laura",
+      "name": "Laura R.",
       "birthday": "2000-04-24",
       "saint": "19/10",
       "phone": "651956054",
@@ -147,7 +139,7 @@ const CELAM_DEFAULT_DATA = {
       "address": ""
     },
     {
-      "name": "Teresa",
+      "name": "Tete",
       "birthday": "2000-09-10",
       "saint": "15/10",
       "phone": "601378586",
@@ -219,7 +211,7 @@ const CELAM_DEFAULT_DATA = {
       "address": ""
     },
     {
-      "name": "Laura",
+      "name": "Laura S.",
       "birthday": "2000-09-19",
       "saint": "19/10",
       "phone": "639226447",
@@ -299,7 +291,7 @@ const CELAM_DEFAULT_DATA = {
       "address": "Javier Ferrero, 16, 3º A 28002 MADRID; Ronda Buenavista, 26. Bl.2,4-B. 45005 TOLEDO"
     },
     {
-      "name": "Marta",
+      "name": "Marta G.",
       "birthday": "2000-02-23",
       "saint": "29/07",
       "phone": "656386059",
@@ -315,7 +307,7 @@ const CELAM_DEFAULT_DATA = {
       "address": "Calle Copenhague 5, 3º1ª, ALCORCÓN (Madrid)"
     },
     {
-      "name": "Marta",
+      "name": "Marta M.",
       "birthday": "2000-06-04",
       "saint": "29/07",
       "phone": "636115581",
@@ -379,7 +371,7 @@ const CELAM_DEFAULT_DATA = {
       "address": "Santa Teresa de Jesús 98, 2E 45600 Talavera de la Reina (Toledo)"
     },
     {
-      "name": "Guillermo",
+      "name": "Guille",
       "birthday": "2000-02-16",
       "saint": "25/06",
       "phone": "661583269",
