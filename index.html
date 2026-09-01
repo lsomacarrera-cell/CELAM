@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#A8CBB7">
+  <meta name="description" content="CELAM · Club Exclusivo de Locos A Mogollón">
+  <link rel="icon" href="assets/celam-logo.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>CELAM</title>
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <button class="icon-button" id="todayBtn" aria-label="Ir a hoy">⌂</button>
+    <div class="brand">
+      <img src="assets/celam-logo.png" alt="CELAM">
+      <div>
+        <div class="brand-name">CELAM</div>
+        <div class="brand-subtitle">Club Exclusivo de Locos A Mogollón</div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Secciones">
+    <button class="tab active" data-view="calendar">📅 Calendario</button>
+    <button class="tab" data-view="agenda">👨‍👩‍👧 Agenda</button>
+    <button class="tab" data-view="reminders">🔔 Recordatorios</button>
+    <button class="tab" data-view="tree">🌳 Árbol</button>
+  </nav>
+
+  <main>
+    <section id="calendarView" class="view active">
+      <section class="hero-card">
+        <div>
+          <span class="eyebrow">CALENDARIO FAMILIAR</span>
+          <h1 id="yearTitle">2026</h1>
+          <p id="themeTitle">Nuestro año juntos</p>
+        </div>
+        <div class="hero-mark">♥</div>
+      </section>
+
+      <section class="quick-grid">
+        <article class="info-card birthday-card">
+          <div class="card-icon">🎂</div>
+          <div>
+            <span class="card-label">PRÓXIMO CUMPLEAÑOS</span>
+            <strong id="nextBirthdayName">Consulta el calendario familiar</strong>
+            <span id="nextBirthdayDate">desde Configuración</span>
+          </div>
+        </article>
+        <article class="info-card reminder-card" id="nextReminderCard">
+          <div class="card-icon">🔔</div>
+          <div>
+            <span class="card-label">PRÓXIMO RECORDATORIO</span>
+            <strong id="nextReminderTitle">No hay recordatorios</strong>
+            <span id="nextReminderDate">Los recordatorios los gestiona el administrador</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="search-panel calendar-search-panel">
+        <label class="search-box" for="calendarSearch">
+          <span>🔎</span>
+          <input id="calendarSearch" type="search" placeholder="Buscar cumpleaños o santo por nombre">
+        </label>
+        <div id="calendarSearchResults" class="search-results"></div>
+      </section>
+
+      <section class="calendar-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">CALENDARIO</span>
+            <h2 id="monthTitle">Enero</h2>
+          </div>
+          <div class="month-controls">
+            <button class="round-button" id="prevMonth" aria-label="Mes anterior">‹</button>
+            <button class="today-button" id="monthToday">Hoy</button>
+            <button class="round-button" id="nextMonth" aria-label="Mes siguiente">›</button>
+          </div>
+        </div>
+        <div class="calendar-card">
+          <div class="weekdays"><span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+          <div class="calendar-grid" id="calendarGrid"></div>
+        </div>
+        <div class="legend">
+          <span><i class="dot birthday"></i>Cumpleaños</span>
+          <span><i class="dot saint"></i>Santo</span>
+          <span><i class="dot reminder"></i>Recordatorio</span>
+        </div>
+      </section>
+
+      <section class="month-detail">
+        <div class="section-heading compact">
+          <div><span class="eyebrow">ESTE MES</span><h2 id="detailTitle">Fechas importantes</h2></div>
+        </div>
+        <div id="monthEvents" class="event-list"></div>
+      </section>
+    </section>
+
+    <section id="agendaView" class="view">
+      <section class="page-heading">
+        <span class="eyebrow">AGENDA FAMILIAR</span>
+        <h2>La familia</h2>
+        <p>Direcciones, teléfonos y correos, todo en un mismo sitio.</p>
+      </section>
+      <label class="search-box agenda-search-box" for="agendaSearch">
+        <span>🔎</span>
+        <input id="agendaSearch" type="search" placeholder="Buscar por nombre, teléfono o email">
+      </label>
+      <div id="contactsList" class="contacts-list"></div>
+    </section>
+
+    <section id="remindersView" class="view">
+      <section class="page-heading">
+        <span class="eyebrow">ORGANIZACIÓN</span>
+        <h2>Recordatorios</h2>
+        <p>Añade un aviso personal para no olvidar felicitar a alguien.</p>
+      </section>
+      <div class="reminder-toolbar">
+        <button class="primary-button" id="addReminder">＋ Añadir recordatorio</button>
+        <button class="secondary-button" id="notificationBtn">🔔 Activar avisos</button>
+      </div>
+      <div id="remindersList" class="reminders-list"></div>
+    </section>
+
+    <section id="treeView" class="view">
+      <section class="page-heading">
+        <span class="eyebrow">HISTORIA FAMILIAR</span>
+        <h2>Árbol genealógico</h2>
+        <p>La estructura está preparada. Aquí pintaremos el árbol de CELAM.</p>
+      </section>
+      <div class="tree-placeholder">
+        <div class="tree-placeholder-icon">🌳</div>
+        <strong>Próximamente</strong>
+        <span>El árbol genealógico se diseñará en una próxima versión.</span>
+      </div>
+    </section>
+  </main>
+
+
+  <dialog id="reminderDialog">
+    <div class="dialog-header">
+      <div><span class="eyebrow">RECORDATORIO PERSONAL</span><h2>No olvidarlo</h2></div>
+      <button class="close-button" id="closeReminder" aria-label="Cerrar">×</button>
+    </div>
+    <form id="reminderForm">
+      <label>¿A quién quieres felicitar?
+        <select id="reminderPerson" required></select>
+      </label>
+      <label>¿Qué quieres recordar?
+        <select id="reminderType" required>
+          <option value="birthday">🎂 Cumpleaños</option>
+          <option value="saint">🌿 Santo</option>
+        </select>
+      </label>
+      <div class="helper" id="reminderPreview">El recordatorio se programará para la próxima fecha.</div>
+      <label>Fecha
+        <input id="reminderDate" type="date" required>
+      </label>
+      <label>Hora (opcional)
+        <input id="reminderTime" type="time">
+      </label>
+      <label>Nota (opcional)
+        <input id="reminderNote" type="text" placeholder="Ej. Llamar por la tarde">
+      </label>
+      <div class="dialog-actions">
+        <button type="button" class="secondary-button" id="cancelReminder">Cancelar</button>
+        <button type="submit" class="primary-button">Guardar recordatorio</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="birthdayPopup" class="birthday-popup">
+    <div class="popup-content">
+      <div class="popup-icon">🎉</div>
+      <span class="eyebrow">HOY EN CELAM</span>
+      <h2 id="popupTitle">No te olvides de felicitar a...</h2>
+      <p id="popupText"></p>
+      <button class="primary-button" id="closeBirthdayPopup">¡Lo tengo!</button>
+    </div>
+  </dialog>
+
+
+  <dialog id="skyDialog" class="sky-dialog">
+    <div class="sky-scene">
+      <div class="cloud cloud-a"></div>
+      <div class="cloud cloud-b"></div>
+      <div class="sun-glow"></div>
+      <div class="sky-card">
+        <div class="sky-icon">🕊️</div>
+        <span class="eyebrow">SIEMPRE CON NOSOTROS</span>
+        <h2 id="skyTitle">Con Dios</h2>
+        <p id="skyText">Con Dios 🤍</p>
+        <button type="button" class="primary-button" id="closeSky">Cerrar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <footer><span>CELAM</span><span>Los cambios se guardan solo en este dispositivo</span></footer>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
