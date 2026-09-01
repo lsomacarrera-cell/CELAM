@@ -116,54 +116,146 @@ function renderNextReminder(){
   $("#nextReminderDate").textContent=r?`${r.date}${r.time?" · "+r.time:""}`:"Añade uno desde Recordatorios";
 }
 function renderContacts(){
-  const c=$("#contactsList"),q=($("#agendaSearch")?.value||"").trim().toLowerCase();
-  const people=data.people.filter(p=>[p.name,p.phone,p.email,p.address].some(v=>String(v||"").toLowerCase().includes(q)));
-  if(!people.length){c.innerHTML=`<div class="empty">${q?"No hemos encontrado a nadie con esa búsqueda.":"Todavía no hay familiares en la agenda."}</div>`;return}
-  c.innerHTML=people.map(p=>`
-    <article class="contact-card">
-      <div class="contact-avatar">${esc(initials(p.name))}</div>
-      <div class="contact-body">
-        <strong>${esc(p.name)}</strong>
-        <div class="contact-detail">
-          ${p.birthday?`🎂 ${formatBirthday(p.birthday)}`:""}${p.saint?`<br>🌿 Santo: ${esc(p.saint)}`:""}${p.address?`<br>📍 ${esc(p.address)}`:""}${p.name==="Modesto"||p.name==="Pilar"&&p.address==="Con Dios"?`<br>🕊️ Con Dios`:""}${p.phone?`<br>📞 ${esc(p.phone)}`:""}${p.email?`<br>✉️ ${esc(p.email)}`:""}
-        </div>
-        <div class="contact-actions">
-          ${p.name==="Modesto"||p.name==="Pilar"&&p.address==="Con Dios"
-  ? `<button type="button" class="map-action tribute-action" data-sky="${esc(p.name)}">🕊️ Ver cielo</button>`
-  : p.address?`<a class="map-action" target="_blank" rel="noopener" href="${mapsUrl(p.address)}">📍 Cómo llegar</a>`:""}
-          ${p.phone?`<a href="tel:${esc(p.phone)}">📞 Llamar</a>`:""}
-          ${p.email?`<a href="mailto:${esc(p.email)}">✉️ Email</a>`:""}
-          <span class="consult-only">Solo consulta</span>
-        </div>
-      </div>
-    </article>`).join("");
-}
-function formatBirthday(v){const d=new Date(v+"T00:00:00");return `${d.getDate()} de ${MONTHS[d.getMonth()].toLowerCase()}`}
-function mapsAddress(address){
-  const parts = String(address || "")
-    .split(",")
-    .map(p => p.trim())
-    .filter(Boolean);
+  const c=$("#contactsList");
+  const q=($("#agendaSearch")?.value||"").trim().toLowerCase();
 
-  const cpIndex = parts.findIndex(p => /^\d{5}$/.test(p));
+  const people=data.people.filter(p =>
+    [p.name,p.phone,p.email,p.address,p.address2]
+      .some(v => String(v||"").toLowerCase().includes(q))
+  );
 
-  if (cpIndex >= 2) {
-    return [
-      ...parts.slice(0, 2),
-      ...parts.slice(cpIndex)
-    ].join(", ");
+  if(!people.length){
+    c.innerHTML=`<div class="empty">
+      ${q
+        ? "No hemos encontrado a nadie con esa búsqueda."
+        : "Todavía no hay familiares en la agenda."}
+    </div>`;
+    return;
   }
 
-  return address;
-}
+  c.innerHTML=people.map(p=>{
 
-function mapsUrl(address){
-  const cleanAddress = mapsAddress(address);
+    const addresses=[p.address,p.address2].filter(Boolean);
 
-  return "https://www.google.com/maps/dir/?api=1&destination="
-    + encodeURIComponent(cleanAddress)
-    + "&travelmode=driving";
+    const isGone =
+      p.address==="Con Dios" ||
+      p.address2==="Con Dios" ||
+      p.name==="Modesto" ||
+      (p.name==="Pilar" && addresses.includes("Con Dios"));
+
+    const addressHtml=addresses.map((address,i)=>{
+
+      if(address==="Con Dios"){
+        return `<div>🕊️ Con Dios</div>`;
+      }
+
+      return `
+        <div class="address-line">
+          📍 ${esc(address)}
+          <a
+            class="map-action"
+            target="_blank"
+            rel="noopener"
+            href="${mapsUrl(address)}"
+          >
+            📍 Cómo llegar${addresses.length>1 ? ` (${i+1})` : ""}
+          </a>
+        </div>
+      `;
+    }).join("");
+
+    const actions=[];
+
+    if(isGone){
+      actions.push(`
+        <button
+          type="button"
+          class="map-action tribute-action"
+          data-sky="${esc(p.name)}"
+        >
+          🕊️ Ver cielo
+        </button>
+      `);
+    }
+
+    if(p.phone){
+      actions.push(`
+        <a href="tel:${esc(p.phone)}">
+          📞 Llamar
+        </a>
+      `);
+    }
+
+    if(p.email){
+      actions.push(`
+        <a href="mailto:${esc(p.email)}">
+          ✉️ Email
+        </a>
+      `);
+    }
+
+    actions.push(`
+      <span class="consult-only">
+        Solo consulta
+      </span>
+    `);
+
+    return `
+      <article class="contact-card">
+
+        <div class="contact-avatar">
+          ${esc(initials(p.name))}
+        </div>
+
+        <div class="contact-body">
+
+          <strong>${esc(p.name)}</strong>
+
+          <div class="contact-detail">
+
+            ${p.birthday
+              ? `🎂 ${formatBirthday(p.birthday)}`
+              : ""}
+
+            ${p.saint
+              ? `<br>🌿 Santo: ${esc(p.saint)}`
+              : ""}
+
+            ${addressHtml}
+
+            ${p.phone
+              ? `<br>📞 ${esc(p.phone)}`
+              : ""}
+
+            ${p.email
+              ? `<br>✉️ ${esc(p.email)}`
+              : ""}
+
+          </div>
+
+          <div class="contact-actions">
+            ${actions.join("")}
+          </div>
+
+        </div>
+
+      </article>
+    `;
+
+  }).join("");
+
+  c.querySelectorAll("[data-sky]").forEach(b=>{
+    b.onclick=()=>{
+      const name=b.dataset.sky;
+
+      $("#skyTitle").textContent=name;
+      $("#skyText").textContent="Con Dios 🤍";
+
+      $("#skyDialog").showModal();
+    };
+  });
 }
+function formatBirthday(v){const d=new Date(v+"T00:00:00");return `${d.getDate()} de ${MONTHS[d.getMonth()].toLowerCase()}`}
 
 function renderCalendarSearch(query){
   const c=$("#calendarSearchResults");if(!c)return;
