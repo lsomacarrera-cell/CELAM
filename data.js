@@ -24,7 +24,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "12/10",
       "phone": "630350755",
       "email": "pilarmiron@gmail.com",
-      "address": "Príncipe de Vergara, 223, 8º A. 28016 MADRID; Doctor Fleming, 13 bis.- 3º, 1ª 25006 LLEIDA"
+      "address": "Príncipe de Vergara, 223, 8º A. 28016 MADRID"
+      "address": "Doctor Fleming, 13 bis.- 3º, 1ª 25006 LLEIDA"
     },
     {
       "name": "Paco",
@@ -32,7 +33,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "04/10",
       "phone": "639306054",
       "email": "francisco.comellas37@gmail.com",
-      "address": ""
+      "address": "Príncipe de Vergara, 223, 8º A. 28016 MADRID"
+      "address": "Doctor Fleming, 13 bis.- 3º, 1ª 25006 LLEIDA"
     },
     {
       "name": "Marta C.",
@@ -56,7 +58,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "19/10",
       "phone": "651956054",
       "email": "laura.rosinach@gmail.com",
-      "address": "Príncipe de Vergara, 223, 8º A. 28016 MADRID"
+      "address": "Australia"
     },
     {
       "name": "Nuria",
@@ -64,7 +66,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "08/09",
       "phone": "621360073",
       "email": "nuria.rosinach@gmail.com",
-      "address": "Manuel Gaya y Tomás, 14 2-1ª 25001 LLEIDA"
+      "address": "Príncipe de Vergara, 223, 8º A. 28016 MADRID"
     },
     {
       "name": "Pablo",
@@ -72,7 +74,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "29/06",
       "phone": "639316276",
       "email": "pablo.comellas@gmail.com",
-      "address": "Federico Gª Lorca, 25. 28750-SAN AGUSTIN DEL GUADALIX (Madrid); 5 Woodbrook Place R93V3V5 CARLOW (Irlanda)"
+      "address": "Federico Gª Lorca, 25. 28750-SAN AGUSTIN DEL GUADALIX (Madrid)"
     },
     {
       "name": "Montse",
@@ -80,7 +82,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "27/04",
       "phone": "610514458",
       "email": "ruizruiz.montse@gmail.com",
-      "address": ""
+      "address": "Federico Gª Lorca, 25. 28750-SAN AGUSTIN DEL GUADALIX (Madrid)"
     },
     {
       "name": "Claudia",
@@ -88,7 +90,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "20/03",
       "phone": "682156909",
       "email": "claudia.comellas@gmail.com",
-      "address": ""
+      "address": "Dublín"
     },
     {
       "name": "Iria",
@@ -96,7 +98,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "13/05",
       "phone": "659039810",
       "email": "iria.comellas@gmail.com",
-      "address": ""
+      "address": "Federico Gª Lorca, 25. 28750-SAN AGUSTIN DEL GUADALIX (Madrid)"
     },
     {
       "name": "Sara",
@@ -104,7 +106,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "09/10",
       "phone": "",
       "email": "comellas.ruiz.sara@gmail.com",
-      "address": ""
+      "address": "Federico Gª Lorca, 25. 28750-SAN AGUSTIN DEL GUADALIX (Madrid)"
     },
     {
       "name": "Marina",
@@ -120,7 +122,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "15/11",
       "phone": "646118323",
       "email": "albertcabrecalleja@gmail.com",
-      "address": ""
+      "address": "Segrià 41 3º D - 25006 LLEIDA"
     },
     {
       "name": "Dan",
@@ -128,7 +130,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "21/07",
       "phone": "",
       "email": "",
-      "address": ""
+      "address": "Segrià 41 3º D - 25006 LLEIDA"
     },
     {
       "name": "Lara",
@@ -136,7 +138,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "26/03",
       "phone": "",
       "email": "",
-      "address": ""
+      "address": "Segrià 41 3º D - 25006 LLEIDA"
     },
     {
       "name": "Teresa",
@@ -144,7 +146,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "15/10",
       "phone": "601378586",
       "email": "temiorte@gmail.com",
-      "address": "Ribadavia, 10, 6-H. 28029 MADRID; Rufo García Rendueles, 15 - 2º D. GIJÓN"
+      "address": "Rufo García Rendueles, 15 - 2º D. GIJÓN"
+      "address": "Ribadavia, 10, 6-H. 28029 MADRID"
     },
     {
       "name": "Pedro",
@@ -152,7 +155,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "29/06",
       "phone": "663075301",
       "email": "pedro.munnoz@gmail.com",
-      "address": ""
+      "address": "Rufo García Rendueles, 15 - 2º D. GIJÓN"
+      "address": "Ribadavia, 10, 6-H. 28029 MADRID"
     },
     {
       "name": "Santiago",
@@ -168,7 +172,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "08/12",
       "phone": "655703079",
       "email": "aguadosuarez@gmail.com",
-      "address": ""
+      "address": "Malva, 2 - 45008 TOLEDO"
     },
     {
       "name": "Leire",
@@ -176,7 +180,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "09/07",
       "phone": "683244749",
       "email": "",
-      "address": ""
+      "address": "Ribadavia, 10, 6-H. 28029 MADRID"
     },
     {
       "name": "Diego",
@@ -184,7 +188,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "13/11",
       "phone": "644620175",
       "email": "",
-      "address": ""
+      "address": "Malva, 2 - 45008 TOLEDO"
     },
     {
       "name": "Gonzalo",
@@ -201,6 +205,7 @@ const CELAM_DEFAULT_DATA = {
       "phone": "619502218",
       "email": "carmenmironortega@gmail.com",
       "address": "Vicari Samuel Riquelme, 22 - 4º G. 03560 EL CAMPELLO (Alicante)"
+      "address": "Bravo Murillo 307, 5º F 28020 MADRID"
     },
     {
       "name": "Alfredo",
@@ -208,7 +213,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "26/08",
       "phone": "672471660",
       "email": "Alfredosomacarrera@gmail.com",
-      "address": ""
+      "address": "Vicari Samuel Riquelme, 22 - 4º G. 03560 EL CAMPELLO (Alicante)"
+      "address": "Bravo Murillo 307, 5º F 28020 MADRID"
     },
     {
       "name": "Laura S.",
@@ -216,7 +222,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "19/10",
       "phone": "639226447",
       "email": "superlaura25@yahoo.es",
-      "address": "Bravo Murillo 307, 5º F 28020 MADRID"
+       "address": "Sant Bartomeu 81, 4C 0560 EL CAMPELLO (Alicante)"
     },
     {
       "name": "Frank",
@@ -224,7 +230,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "04/10",
       "phone": "658960120",
       "email": "frankvaldescabrera@gmail.com",
-      "address": ""
+      "address": "Sant Bartomeu 81, 4C 0560 EL CAMPELLO (Alicante)"
     },
     {
       "name": "Ana",
@@ -240,7 +246,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "19/03",
       "phone": "607337825",
       "email": "jmmartinezgar@gmail.com",
-      "address": ""
+      "address": "Corazón de María, 39, 4º C . Esc. Dcha.-28002 MADRID"
     },
     {
       "name": "Anuska",
@@ -256,7 +262,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "19/03",
       "phone": "630351215",
       "email": "chenton@gmail.com",
-      "address": ""
+      "address": "Santa Hortensia, 2 - 2º B. 28002 MADRID"
     },
     {
       "name": "Daniel J.",
@@ -264,7 +270,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "11/12",
       "phone": "",
       "email": "",
-      "address": ""
+      "address": "Santa Hortensia, 2 - 2º B. 28002 MADRID"
     },
     {
       "name": "Marcos",
@@ -272,7 +278,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "25/04",
       "phone": "",
       "email": "",
-      "address": ""
+      "address": "Santa Hortensia, 2 - 2º B. 28002 MADRID"
     },
     {
       "name": "Chema M.",
@@ -288,7 +294,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "01/01",
       "phone": "608103225",
       "email": "manuelantonio.miron@gmail.com",
-      "address": "Javier Ferrero, 16, 3º A 28002 MADRID; Ronda Buenavista, 26. Bl.2,4-B. 45005 TOLEDO"
+      "address": "Javier Ferrero, 16, 3º A 28002 MADRID"
+      "address": "Ronda Buenavista, 26. Bl.2,4-B. 45005 TOLEDO"
     },
     {
       "name": "Marta G.",
@@ -296,7 +303,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "29/07",
       "phone": "656386059",
       "email": "mjmgago@gmail.com",
-      "address": ""
+      "address": "Javier Ferrero, 16, 3º A 28002 MADRID"
+      "address": "Ronda Buenavista, 26. Bl.2,4-B. 45005 TOLEDO"
     },
     {
       "name": "Alvaro",
@@ -312,7 +320,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "29/07",
       "phone": "636115581",
       "email": "martamoretongomez@gmail.com",
-      "address": ""
+      "address": "Calle Copenhague 5, 3º1ª, ALCORCÓN (Madrid)"
     },
     {
       "name": "Elena",
@@ -320,7 +328,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "18/08",
       "phone": "662167990",
       "email": "elenamirongago@gmail.com",
-      "address": "Nieremberg 18, portal B, 1ºC. 28002 MADRID; Carretera Carmona 41, Bloque C, 10C. 41008 SEVILLA"
+      "address": "Carretera Carmona 41, Bloque C, 10C. 41008 SEVILLA"
+      "address": "Nieremberg 18, portal B, 1ºC. 28002 MADRID"
     },
     {
       "name": "Fran",
@@ -328,7 +337,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "04/10",
       "phone": "605500539",
       "email": "Franserranopineda@gmail.com",
-      "address": ""
+      "address": "Carretera Carmona 41, Bloque C, 10C. 41008 SEVILLA"
+      "address": "Nieremberg 18, portal B, 1ºC. 28002 MADRID"
     },
     {
       "name": "David",
@@ -336,7 +346,8 @@ const CELAM_DEFAULT_DATA = {
       "saint": "01/03",
       "phone": "",
       "email": "Davidserranomiron@gmail.com",
-      "address": ""
+      "address": "Carretera Carmona 41, Bloque C, 10C. 41008 SEVILLA"
+      "address": "Nieremberg 18, portal B, 1ºC. 28002 MADRID"
     },
     {
       "name": "Eduardo",
@@ -352,7 +363,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "12/02",
       "phone": "600608891",
       "email": "tolelali@yahoo.es",
-      "address": ""
+      "address": "Olmo, 6. Urb. La Hacienda. COBISA (Toledo)"
     },
     {
       "name": "Eduardo",
@@ -360,7 +371,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "13/10",
       "phone": "687390899",
       "email": "eduardomironlopez@gmail.com",
-      "address": "Polozkerstr. 4 - 88045 Friedrichshafen - Alemania"
+      "address": "Dinamarca?"
     },
     {
       "name": "Pilar",
@@ -376,7 +387,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "25/06",
       "phone": "661583269",
       "email": "guillermosanchezfernandez@outlook.es",
-      "address": ""
+      "address": "Santa Teresa de Jesús 98, 2E 45600 Talavera de la Reina (Toledo)"
     },
     {
       "name": "Guillermo",
@@ -384,7 +395,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "25/06",
       "phone": "",
       "email": "",
-      "address": ""
+      "address": "Santa Teresa de Jesús 98, 2E 45600 Talavera de la Reina (Toledo)"
     },
     {
       "name": "Cristina",
@@ -400,7 +411,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "19/08",
       "phone": "687327753",
       "email": "mariano.alvarez57@gmail.com",
-      "address": ""
+      "address": "Gustavo Fernandez Balbuena, 4. 2ºA 28002 MADRID"
     },
     {
       "name": "Almudena",
@@ -408,7 +419,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "09/11",
       "phone": "610892250",
       "email": "almudenaam1991@hotmail.es",
-      "address": ""
+      "address": "Gustavo Fernandez Balbuena, 4. 2ºA 28002 MADRID"
     },
     {
       "name": "Rocío",
@@ -424,7 +435,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "03/12",
       "phone": "675779717",
       "email": "javiermiron@telefonica.net",
-      "address": "Urb. Isla de Guadalmina, villa 17. 29670 San Pedro de Alcántara, Málaga."
+      "address": "Urb. Isla de Guadalmina, villa 17. 29670 San Pedro de Alcántara, Málaga"
     },
     {
       "name": "Amalia",
@@ -432,7 +443,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "10/07",
       "phone": "670054105",
       "email": "amaliagracia@telefonica.net",
-      "address": ""
+      "address": "Urb. Isla de Guadalmina, villa 17. 29670 San Pedro de Alcántara, Málaga"
     },
     {
       "name": "Beatriz",
@@ -456,7 +467,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "29/06",
       "phone": "638396495",
       "email": "paulamirongracia@hotmail.com",
-      "address": ""
+      "address": "Arturo Soria 301 7A. 28033 MADRID"
     }
   ],
   "reminders": []
