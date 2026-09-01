@@ -40,3 +40,75 @@ select{display:block;width:100%;margin-top:7px;padding:12px 13px;border:1px soli
 .sun-glow{position:absolute;width:180px;height:180px;border-radius:50%;background:rgba(255,246,189,.5);top:-65px;right:45px;filter:blur(3px)}
 .sky-card{position:relative;z-index:2;text-align:center;background:rgba(255,255,255,.88);padding:30px 34px;border-radius:24px;box-shadow:0 16px 50px rgba(66,100,130,.18);backdrop-filter:blur(4px)}
 .sky-icon{font-size:52px}.sky-card h2{font-family:"Playfair Display",serif;font-size:32px;margin:7px 0}.sky-card p{margin:0 0 22px;color:var(--muted);font-size:17px}
+/* ===== NUEVA CABECERA CELAM ===== */
+
+.topbar {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+  min-height: 110px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.brand img {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+}
+
+.brand-year {
+  font-family: "Playfair Display", serif;
+  font-size: 76px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -3px;
+}
+
+/* El antiguo bloque grande del calendario desaparece */
+.hero-card {
+  display: none !important;
+}
+
+/* La navegación sube y queda más limpia */
+.tabs {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* En móvil */
+@media (max-width: 720px) {
+
+  .topbar {
+    grid-template-columns: 54px 1fr;
+    min-height: 110px;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .brand {
+    gap: 18px;
+  }
+
+  .brand img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .brand-year {
+    font-size: 58px;
+    letter-spacing: -2px;
+  }
+
+  .tabs {
+    margin-bottom: 22px;
+  }
+}
