@@ -139,7 +139,31 @@ function renderContacts(){
     </article>`).join("");
 }
 function formatBirthday(v){const d=new Date(v+"T00:00:00");return `${d.getDate()} de ${MONTHS[d.getMonth()].toLowerCase()}`}
-function mapsUrl(address){return "https://www.google.com/maps/dir/?api=1&destination="+encodeURIComponent(address)+"&travelmode=driving"}
+function mapsAddress(address){
+  const parts = String(address || "")
+    .split(",")
+    .map(p => p.trim())
+    .filter(Boolean);
+
+  const cpIndex = parts.findIndex(p => /^\d{5}$/.test(p));
+
+  if (cpIndex >= 2) {
+    return [
+      ...parts.slice(0, 2),
+      ...parts.slice(cpIndex)
+    ].join(", ");
+  }
+
+  return address;
+}
+
+function mapsUrl(address){
+  const cleanAddress = mapsAddress(address);
+
+  return "https://www.google.com/maps/dir/?api=1&destination="
+    + encodeURIComponent(cleanAddress)
+    + "&travelmode=driving";
+}
 
 function renderCalendarSearch(query){
   const c=$("#calendarSearchResults");if(!c)return;
