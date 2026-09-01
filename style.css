@@ -59,18 +59,18 @@ select{display:block;width:100%;margin-top:7px;padding:12px 13px;border:1px soli
 }
 
 .brand img {
-  width: 92px;
-  height: 92px;
+  width: 145px;
+  height: 145px;
   object-fit: contain;
 }
 
 .brand-year {
   font-family: "Playfair Display", serif;
-  font-size: 76px;
+  font-size: 110px;
   line-height: 1;
   font-weight: 700;
   color: var(--ink);
-  letter-spacing: -3px;
+  letter-spacing: -4px;
 }
 
 /* El antiguo bloque grande del calendario desaparece */
@@ -99,13 +99,13 @@ select{display:block;width:100%;margin-top:7px;padding:12px 13px;border:1px soli
   }
 
   .brand img {
-    width: 88px;
-    height: 88px;
+    width: 125px;
+    height: 125px;
   }
 
   .brand-year {
-    font-size: 58px;
-    letter-spacing: -2px;
+    font-size: 78px;
+    letter-spacing: -3px;
   }
 
   .tabs {
