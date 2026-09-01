@@ -34,7 +34,7 @@ const CELAM_DEFAULT_DATA = {
       "phone": "639306054",
       "email": "francisco.comellas37@gmail.com",
       "address": "Príncipe de Vergara, 223, 8ºA, 28016, MADRID"
-      "address22": "Doctor Fleming, 13 bis, 3º1ª, 25006, LLEIDA"
+      "address2": "Doctor Fleming, 13 bis, 3º1ª, 25006, LLEIDA"
     },
     {
       "name": "Marta C.",
