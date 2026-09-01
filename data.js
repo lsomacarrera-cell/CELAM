@@ -42,15 +42,7 @@ const CELAM_DEFAULT_DATA = {
       "email": "m.comellas@gmail.com",
       "address": "Manuel Gaya y Tomás, 14 2-1ª 25001 LLEIDA"
     },
-    {
-      "name": "Josep",
-      "birthday": "2000-07-05",
-      "saint": "19/03",
-      "phone": "610815716",
-      "email": "j.rosinach@gmail.com",
-      "address": "Manuel Gaya y Tomás, 14 2-1ª 25001 LLEIDA"
-    },
-    {
+       {
       "name": "Magí",
       "birthday": "2000-05-11",
       "saint": "19/08",
