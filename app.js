@@ -1,5 +1,5 @@
 const MONTHS=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
-const STORAGE_KEY="celam-data-v2";
+const STORAGE_KEY="celam-data-v3";
 const $=s=>document.querySelector(s);
 let data=loadData();
 let viewDate=new Date(data.year,new Date().getMonth(),1);
