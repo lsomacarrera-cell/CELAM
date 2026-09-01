@@ -194,12 +194,6 @@ function renderContacts(){
       `);
     }
 
-    actions.push(`
-      <span class="consult-only">
-        Solo consulta
-      </span>
-    `);
-
     return `
       <article class="contact-card">
 
