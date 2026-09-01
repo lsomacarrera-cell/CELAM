@@ -115,6 +115,7 @@ function renderNextReminder(){
   $("#nextReminderTitle").textContent=r?r.title:"No hay recordatorios";
   $("#nextReminderDate").textContent=r?`${r.date}${r.time?" · "+r.time:""}`:"Añade uno desde Recordatorios";
 }
+
 function renderContacts(){
   const c=$("#contactsList");
   const q=($("#agendaSearch")?.value||"").trim().toLowerCase();
@@ -136,12 +137,6 @@ function renderContacts(){
   c.innerHTML=people.map(p=>{
 
     const addresses=[p.address,p.address2].filter(Boolean);
-
-    const isGone =
-      p.address==="Con Dios" ||
-      p.address2==="Con Dios" ||
-      p.name==="Modesto" ||
-      (p.name==="Pilar" && addresses.includes("Con Dios"));
 
     const addressHtml=addresses.map((address,i)=>{
 
@@ -165,7 +160,6 @@ function renderContacts(){
     }).join("");
 
     const actions=[];
-
 
     if(p.phone){
       actions.push(`
@@ -226,19 +220,38 @@ function renderContacts(){
     `;
 
   }).join("");
-
-  c.querySelectorAll("[data-sky]").forEach(b=>{
-    b.onclick=()=>{
-      const name=b.dataset.sky;
-
-      $("#skyTitle").textContent=name;
-      $("#skyText").textContent="Con Dios 🤍";
-
-      $("#skyDialog").showModal();
-    };
-  });
 }
+
 function formatBirthday(v){const d=new Date(v+"T00:00:00");return `${d.getDate()} de ${MONTHS[d.getMonth()].toLowerCase()}`}
+
+// Limpia la dirección únicamente para Google Maps.
+// Conserva calle + número + código postal + ciudad y elimina el piso/puerta.
+// La dirección completa sigue mostrándose en la Agenda.
+function mapsAddress(address){
+  const parts = String(address || "")
+    .split(",")
+    .map(p => p.trim())
+    .filter(Boolean);
+
+  const cpIndex = parts.findIndex(p => /^\d{5}$/.test(p));
+
+  if (cpIndex >= 2) {
+    return [
+      ...parts.slice(0, 2),
+      ...parts.slice(cpIndex)
+    ].join(", ");
+  }
+
+  return address;
+}
+
+function mapsUrl(address){
+  const cleanAddress = mapsAddress(address);
+
+  return "https://www.google.com/maps/dir/?api=1&destination="
+    + encodeURIComponent(cleanAddress)
+    + "&travelmode=driving";
+}
 
 function renderCalendarSearch(query){
   const c=$("#calendarSearchResults");if(!c)return;
