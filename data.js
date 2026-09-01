@@ -24,7 +24,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "12/10",
       "phone": "630350755",
       "email": "pilarmiron@gmail.com",
-      "address": "Príncipe de Vergara, 223, 8ºA, 28016, MADRID"
+      "address": "Príncipe de Vergara, 223, 8ºA, 28016, MADRID",
       "address2": "Doctor Fleming, 13 bis, 3º1ª, 25006, LLEIDA"
     },
     {
@@ -33,7 +33,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "04/10",
       "phone": "639306054",
       "email": "francisco.comellas37@gmail.com",
-      "address": "Príncipe de Vergara, 223, 8ºA, 28016, MADRID"
+      "address": "Príncipe de Vergara, 223, 8ºA, 28016, MADRID",
       "address2": "Doctor Fleming, 13 bis, 3º1ª, 25006, LLEIDA"
     },
     {
@@ -146,7 +146,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "15/10",
       "phone": "601378586",
       "email": "temiorte@gmail.com",
-      "address": "Rufo García Rendueles, 15, 2 D, 33203, GIJÓN"
+      "address": "Rufo García Rendueles, 15, 2 D, 33203, GIJÓN",
       "address2": "Ribadavia, 10, 6ºH, 28029, MADRID"
     },
     {
@@ -155,7 +155,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "29/06",
       "phone": "663075301",
       "email": "pedro.munnoz@gmail.com",
-      "address": "Rufo García Rendueles, 15 - 2º D. GIJÓN"
+      "address": "Rufo García Rendueles, 15 - 2º D. GIJÓN",
       "address2": "Ribadavia, 10, 6ºH, 28029, MADRID"
     },
     {
@@ -204,7 +204,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "16/07",
       "phone": "619502218",
       "email": "carmenmironortega@gmail.com",
-      "address": "Vicari Samuel Riquelme, 22, 4ºG, 03560, EL CAMPELLO, Alicante"
+      "address": "Vicari Samuel Riquelme, 22, 4ºG, 03560, EL CAMPELLO, Alicante",
       "address2": "Bravo Murillo, 307, 5ºF, 28020, MADRID"
     },
     {
@@ -213,7 +213,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "26/08",
       "phone": "672471660",
       "email": "Alfredosomacarrera@gmail.com",
-      "address": "Vicari Samuel Riquelme, 22, 4ºG, 03560, EL CAMPELLO, Alicante"
+      "address": "Vicari Samuel Riquelme, 22, 4ºG, 03560, EL CAMPELLO, Alicante",
       "address2": "Bravo Murillo, 307, 5ºF, 28020, MADRID"
     },
     {
@@ -294,7 +294,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "01/01",
       "phone": "608103225",
       "email": "manuelantonio.miron@gmail.com",
-      "address": "Javier Ferrero, 16, 3ºA, 28002, MADRID"
+      "address": "Javier Ferrero, 16, 3ºA, 28002, MADRID",
       "address2": "Ronda Buenavista, 26, Bl.2, 4ºB, 45005, TOLEDO"
     },
     {
@@ -303,7 +303,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "29/07",
       "phone": "656386059",
       "email": "mjmgago@gmail.com",
-      "address": "Javier Ferrero, 16, 3ºA, 28002, MADRID"
+      "address": "Javier Ferrero, 16, 3ºA, 28002, MADRID",
       "address22": "Ronda Buenavista, 26, Bl.2, 4ºB, 45005, TOLEDO"
     },
     {
@@ -328,7 +328,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "18/08",
       "phone": "662167990",
       "email": "elenamirongago@gmail.com",
-      "address": "Carretera Carmona, 41, Bloque C, 10ºC, 41008, SEVILLA"
+      "address": "Carretera Carmona, 41, Bloque C, 10ºC, 41008, SEVILLA",
       "address2": "Nieremberg, 18, portal B, 1ºC, 28002, MADRID"
     },
     {
@@ -337,7 +337,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "04/10",
       "phone": "605500539",
       "email": "Franserranopineda@gmail.com",
-      "address": "Carretera Carmona, 41, Bloque C, 10ºC, 41008, SEVILLA"
+      "address": "Carretera Carmona, 41, Bloque C, 10ºC, 41008, SEVILLA",
       "address2": "Nieremberg, 18, portal B, 1ºC, 28002, MADRID"
     },
     {
@@ -346,7 +346,7 @@ const CELAM_DEFAULT_DATA = {
       "saint": "01/03",
       "phone": "",
       "email": "Davidserranomiron@gmail.com",
-      "address": "Carretera Carmona, 41, Bloque C, 10ºC, 41008, SEVILLA"
+      "address": "Carretera Carmona, 41, Bloque C, 10ºC, 41008, SEVILLA",
       "address2": "Nieremberg, 18, portal B, 1ºC, 28002, MADRID"
     },
     {
