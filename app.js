@@ -166,17 +166,6 @@ function renderContacts(){
 
     const actions=[];
 
-    if(isGone){
-      actions.push(`
-        <button
-          type="button"
-          class="map-action tribute-action"
-          data-sky="${esc(p.name)}"
-        >
-          🕊️ Ver cielo
-        </button>
-      `);
-    }
 
     if(p.phone){
       actions.push(`
